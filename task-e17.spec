@@ -4,11 +4,11 @@ Release: %mkrel 1
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
-
+URL:	 http://wiki.mandriva.com/en/Development/Ideas/E17
 Source : %name.tar.bz2
 
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
+BuildRoot: %{_tmppath}/%{name}-root
 
 Provides: E17
 
@@ -61,13 +61,19 @@ Requires: evfs
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
-dependencies for running the E17 Mandriva Desktop.
+all E17 application and librairies.
 
 %prep
+%setup -q -n %name
 
 %install
 rm -rf $RPM_BUILD_ROOT
+mkdir -p ${RPM_BUILD_ROOT}/%{_prefix}/share/%name/doc/
+cp README ${RPM_BUILD_ROOT}/%{_prefix}/share/%name/doc/
 
-%post
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files
+%defattr(-,root,root)
+%{_prefix}/share/%name/doc/README
