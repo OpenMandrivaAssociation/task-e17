@@ -53,6 +53,9 @@ Requires: estickies
 Requires: empower
 Requires: edje_viewer
 Requires: e_modules
+Requires: esmart
+Requires: e_dbus
+Requires: evfs
 #Requires: enity
 #Requires: eclair
 
