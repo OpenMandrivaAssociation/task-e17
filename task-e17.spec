@@ -53,6 +53,8 @@ Requires: estickies
 Requires: empower
 Requires: edje_viewer
 Requires: e_modules
+#Requires: enity
+#Requires: eclair
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
