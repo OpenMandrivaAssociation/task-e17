@@ -1,6 +1,6 @@
 Name:    task-e17
 Version: 2008
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -15,7 +15,7 @@ Provides: E17
 # prefered apps
 Requires: thunar
 Requires: rhythmbox
-Requires: firefox
+Requires: mozilla-firefox
 Requires: evince
 Requires: lftp
 Requires: brasero
