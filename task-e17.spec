@@ -1,6 +1,6 @@
 Name:    task-e17
 Version: 2008
-Release: %mkrel 2
+Release: %mkrel 3
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
