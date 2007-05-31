@@ -25,6 +25,8 @@ Requires: screen
 Requires: xterm
 #Requires: pidgin
 Requires: aumix
+Requires: gtk-chtheme
+Requires: terminal
 
 # E17 apps
 Requires: e
@@ -55,7 +57,9 @@ Requires: e_modules
 Requires: esmart
 Requires: e_dbus
 Requires: evfs
-#Requires: enity
+Requires: expedite
+Requires: extrackt
+Requires: emphasis
 #Requires: eclair
 
 %description
