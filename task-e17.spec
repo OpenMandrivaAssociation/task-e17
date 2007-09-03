@@ -1,6 +1,6 @@
 Name:    task-e17
 Version: 2008
-Release: %mkrel 4
+Release: %mkrel 6
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -31,7 +31,7 @@ Requires: terminal
 # E17 apps
 Requires: e
 Requires: eet
-Requires: e_utils
+#Requires: e_utils
 Requires: enity
 Requires: edje
 Requires: imlib2
@@ -46,20 +46,20 @@ Requires: evas
 Requires: edb
 Requires: eet
 Requires: embryo
-Requires: ephoto
-Requires: exhibit
-Requires: engrave
+#Requires: ephoto
+#Requires: exhibit
+#Requires: engrave
 Requires: entrance
-Requires: estickies
-Requires: empower
-Requires: edje_viewer
+#Requires: estickies
+#Requires: empower
+#Requires: edje_viewer
 Requires: e_modules
 Requires: esmart
-Requires: e_dbus
-Requires: evfs
-Requires: expedite
-Requires: extrackt
-Requires: emphasis
+#Requires: e_dbus
+#Requires: evfs
+#Requires: expedite
+#Requires: extrackt
+#Requires: emphasis
 #Requires: eclair
 
 %description
