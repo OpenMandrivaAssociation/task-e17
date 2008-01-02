@@ -8,6 +8,7 @@ URL:	 http://wiki.mandriva.com/en/Development/Ideas/E17
 Source : %name.tar.bz2
 
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-root
 
 Provides: E17
 
