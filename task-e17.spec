@@ -1,6 +1,6 @@
 Name:    task-e17
-Version: 2008
-Release: %mkrel 6
+Version: 2008.1
+Release: %mkrel 1
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -13,13 +13,14 @@ BuildRoot: %{_tmppath}/%{name}-root
 Provides: E17
 
 # prefered apps
-Requires: thunar
-Requires: rhythmbox
+suggests: thunar
+suggests: exaile
+suggests: file-roller
 Requires: mozilla-firefox
 Requires: evince
 Requires: lftp
 Requires: brasero
-Requires: gimp
+suggests: gimp
 Requires: screen
 #Requires: xchat
 Requires: xterm
@@ -27,12 +28,13 @@ Requires: xterm
 Requires: aumix
 Requires: gtk-chtheme
 Requires: terminal
+Requires: Eterm
 
 # E17 apps
 Requires: e
 Requires: eet
 #Requires: e_utils
-Requires: enity
+#Requires: enity
 Requires: edje
 Requires: imlib2
 Requires: emotion
