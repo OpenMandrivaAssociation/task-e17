@@ -1,6 +1,6 @@
 Name:    task-e17
 Version: 2008.1
-Release: %mkrel 2
+Release: %mkrel 3
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -20,6 +20,7 @@ Requires: mozilla-firefox
 Requires: evince
 Requires: lftp
 Requires: brasero
+Requires: itask
 suggests: gimp
 Requires: screen
 #Requires: xchat
