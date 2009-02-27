@@ -1,5 +1,5 @@
 Name:    task-e17
-Version: 2009.0
+Version: 2009.1
 Release: %mkrel 1
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
@@ -16,7 +16,7 @@ Provides: E17
 suggests: thunar
 suggests: exaile
 suggests: file-roller
-Requires: mozilla-firefox
+Requires: midori
 Requires: evince
 Requires: lftp
 Requires: brasero
@@ -44,7 +44,7 @@ Requires: epsilon
 Requires: etk
 Requires: efreet
 Requires: ewl
-Requires: epeg
+#Requires: epeg
 Requires: ecore
 Requires: edb
 Requires: eet
