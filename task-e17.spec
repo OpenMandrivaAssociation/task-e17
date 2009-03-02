@@ -36,10 +36,13 @@ Requires: emphasis
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
-all E17 application and librairies.
+all E17 application and librairies. It also install some suggests
 
 %package minimal
 %description minimal
+This package is a meta-package, meaning that its purpose is to contain
+all E17 application and librairies.
+
 # E17 apps
 Requires: Eterm
 Requires: e
