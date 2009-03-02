@@ -10,7 +10,6 @@ Source : %name.tar.bz2
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-root
 
-Provides: E17
 # prefered apps
 suggests: thunar
 suggests: exaile
@@ -28,7 +27,7 @@ Requires: aumix
 Requires: gtk-chtheme
 #Requires: terminal
 Requires: mrxvt
-Requires: %name-minimal
+Requires: %{name}-minimal
 Requires: elicit
 Requires: edb
 Requires: expedite
@@ -43,6 +42,7 @@ all E17 application and librairies. It also install some suggests
 This package is a meta-package, meaning that its purpose is to contain
 all E17 application and librairies.
 
+Provides: E17
 # E17 apps
 Requires: Eterm
 Requires: e
