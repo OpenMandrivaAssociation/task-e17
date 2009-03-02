@@ -1,6 +1,6 @@
 Name:    task-e17
 Version: 2009.1
-Release: %mkrel 2
+Release: %mkrel 3
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -11,17 +11,15 @@ BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-root
 
 Provides: E17
-
 # prefered apps
 suggests: thunar
 suggests: exaile
 suggests: file-roller
+suggests: gimp
 Requires: midori
 Requires: evince
 Requires: lftp
 Requires: brasero
-Requires: itask
-suggests: gimp
 Requires: screen
 #Requires: xchat
 Requires: xterm
@@ -29,14 +27,23 @@ Requires: xterm
 Requires: aumix
 Requires: gtk-chtheme
 #Requires: terminal
-Requires: Eterm
 Requires: mrxvt
+Requires: %name-minimal
+Requires: elicit
+Requires: edb
+Requires: expedite
+Requires: emphasis
 
+%description
+This package is a meta-package, meaning that its purpose is to contain
+all E17 application and librairies.
+
+%package -n minimal
+%description -n minimal
 # E17 apps
+Requires: Eterm
 Requires: e
 Requires: eet
-#Requires: e_utils
-#Requires: enity
 Requires: edje
 Requires: imlib2
 Requires: emotion
@@ -44,30 +51,27 @@ Requires: epsilon
 Requires: etk
 Requires: efreet
 Requires: ewl
-#Requires: epeg
+Requires: itask
+Requires: exalt
+Requires: elementary
 Requires: ecore
 Requires: edb
 Requires: eet
 Requires: embryo
+Requires: estickies
+Requires: esmart
+Requires: e_dbus
+#Requires: e_modules
+#Requires: epeg
 #Requires: ephoto
 #Requires: exhibit
 #Requires: engrave
 #Requires: entrance
-Requires: estickies
 #Requires: empower
 #Requires: edje_viewer
-#Requires: e_modules
-Requires: esmart
-Requires: e_dbus
 #Requires: evfs
-Requires: expedite
 #Requires: extrackt
-Requires: emphasis
 #Requires: eclair
-
-%description
-This package is a meta-package, meaning that its purpose is to contain
-all E17 application and librairies.
 
 %prep
 %setup -q -n %name
@@ -81,5 +85,9 @@ cp README ${RPM_BUILD_ROOT}/%{_prefix}/share/%name/doc/
 rm -rf $RPM_BUILD_ROOT
 
 %files
+%defattr(-,root,root)
+%{_prefix}/share/%name/doc/README
+
+%files -n minimal
 %defattr(-,root,root)
 %{_prefix}/share/%name/doc/README
