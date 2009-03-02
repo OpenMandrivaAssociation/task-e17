@@ -38,8 +38,8 @@ Requires: emphasis
 This package is a meta-package, meaning that its purpose is to contain
 all E17 application and librairies.
 
-%package -n minimal
-%description -n minimal
+%package minimal
+%description minimal
 # E17 apps
 Requires: Eterm
 Requires: e
@@ -88,6 +88,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_prefix}/share/%name/doc/README
 
-%files -n minimal
+%files minimal
 %defattr(-,root,root)
 %{_prefix}/share/%name/doc/README
