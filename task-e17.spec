@@ -1,6 +1,6 @@
 Name:    task-e17
 Version: 2009.1
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -29,7 +29,7 @@ Requires: xterm
 Requires: aumix
 Requires: gtk-chtheme
 #Requires: terminal
-#Requires: Eterm
+Requires: Eterm
 Requires: mrxvt
 
 # E17 apps
@@ -52,17 +52,17 @@ Requires: embryo
 #Requires: ephoto
 #Requires: exhibit
 #Requires: engrave
-Requires: entrance
-#Requires: estickies
+#Requires: entrance
+Requires: estickies
 #Requires: empower
 #Requires: edje_viewer
-Requires: e_modules
+#Requires: e_modules
 Requires: esmart
-#Requires: e_dbus
+Requires: e_dbus
 #Requires: evfs
-#Requires: expedite
+Requires: expedite
 #Requires: extrackt
-#Requires: emphasis
+Requires: emphasis
 #Requires: eclair
 
 %description
