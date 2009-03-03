@@ -11,10 +11,10 @@ BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-root
 
 # prefered apps
-suggests: thunar
-suggests: exaile
-suggests: file-roller
-suggests: gimp
+Suggests: thunar
+Suggests: exaile
+Suggests: file-roller
+Suggests: gimp
 Requires: midori
 Requires: evince
 Requires: lftp
@@ -38,12 +38,12 @@ This package is a meta-package, meaning that its purpose is to contain
 all E17 application and librairies. It also install some suggests
 
 %package minimal
+
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
 all E17 application and librairies.
 
 Provides: E17
-# E17 apps
 Requires: Eterm
 Requires: e
 Requires: eet
@@ -64,7 +64,7 @@ Requires: embryo
 Requires: estickies
 Requires: esmart
 Requires: e_dbus
-#Requires: e_modules
+Requires: e_modules
 #Requires: epeg
 #Requires: ephoto
 #Requires: exhibit
