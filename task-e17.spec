@@ -1,6 +1,6 @@
 Name:    task-e17
 Version: 2009.1
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -16,22 +16,30 @@ Suggests: exaile
 Suggests: file-roller
 Suggests: gimp
 Suggests: thunar
+Suggests: midori
+Suggests: xterm
 Requires: %{name}-minimal
 Requires: aumix
 Requires: brasero
-Requires: edb
-Requires: elicit
-Requires: emphasis
 Requires: evince
-Requires: expedite
 Requires: gtk-chtheme
 Requires: lftp
-Requires: midori
 Requires: mrxvt
 Requires: screen
-Requires: xterm
 #Requires: xchat
 #Requires: pidgin
+
+Requires: emphasis
+Requires: expedite
+Requires: elitaire
+Requires: edb
+Requires: elicit
+Requires: edje_viewer
+Requires: edje_editor
+Requires: estickies
+Requires: enna
+Requires: Eterm
+Requires: entrance
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -41,11 +49,6 @@ all E17 application and librairies. It also install some suggests
 Summary: Metapackage minimal for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
-
-%description minimal
-This package is a meta-package, meaning that its purpose is to contain
-all E17 application and librairies.
-
 Provides: E17
 Requires: Eterm
 Requires: e
@@ -64,7 +67,6 @@ Requires: ecore
 Requires: edb
 Requires: eet
 Requires: embryo
-Requires: estickies
 Requires: esmart
 Requires: e_dbus
 Requires: e_modules
@@ -72,12 +74,14 @@ Requires: e_modules
 #Requires: ephoto
 #Requires: exhibit
 #Requires: engrave
-#Requires: entrance
 #Requires: empower
-#Requires: edje_viewer
 #Requires: evfs
 #Requires: extrackt
 #Requires: eclair
+
+%description minimal
+This package is a meta-package, meaning that its purpose is to contain
+all E17 application and librairies.
 
 %prep
 %setup -q -n %name
