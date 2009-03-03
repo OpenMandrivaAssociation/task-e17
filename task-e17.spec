@@ -38,6 +38,9 @@ This package is a meta-package, meaning that its purpose is to contain
 all E17 application and librairies. It also install some suggests
 
 %package minimal
+Summary: Metapackage minimal for the E17
+Group:   Graphical desktop/Enlightenment
+License: GPL
 
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
