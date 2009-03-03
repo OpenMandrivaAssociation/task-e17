@@ -1,6 +1,6 @@
 Name:    task-e17
 Version: 2009.1
-Release: %mkrel 4
+Release: %mkrel 5
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -40,6 +40,9 @@ Requires: estickies
 Requires: enna
 Requires: Eterm
 Requires: entrance
+Requires: extrackt
+Requires: enity
+
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -76,7 +79,6 @@ Requires: e_modules
 #Requires: engrave
 #Requires: empower
 #Requires: evfs
-#Requires: extrackt
 #Requires: eclair
 
 %description minimal
