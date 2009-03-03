@@ -4,6 +4,7 @@ Release: %mkrel 3
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
+Epoch:	 1
 URL:	 http://wiki.mandriva.com/en/Development/Ideas/E17
 Source : %name.tar.bz2
 
@@ -11,27 +12,26 @@ BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-root
 
 # prefered apps
-Suggests: thunar
 Suggests: exaile
 Suggests: file-roller
 Suggests: gimp
-Requires: midori
-Requires: evince
-Requires: lftp
-Requires: brasero
-Requires: screen
-#Requires: xchat
-Requires: xterm
-#Requires: pidgin
-Requires: aumix
-Requires: gtk-chtheme
-#Requires: terminal
-Requires: mrxvt
+Suggests: thunar
 Requires: %{name}-minimal
-Requires: elicit
+Requires: aumix
+Requires: brasero
 Requires: edb
-Requires: expedite
+Requires: elicit
 Requires: emphasis
+Requires: evince
+Requires: expedite
+Requires: gtk-chtheme
+Requires: lftp
+Requires: midori
+Requires: mrxvt
+Requires: screen
+Requires: xterm
+#Requires: xchat
+#Requires: pidgin
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
