@@ -1,6 +1,6 @@
 Name:    task-e17
 Version: 2009.1
-Release: %mkrel 5
+Release: %mkrel 6
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -37,7 +37,7 @@ Requires: elicit
 Requires: edje_viewer
 Requires: edje_editor
 Requires: estickies
-Requires: enna
+#Requires: enna # broken upstream
 Requires: Eterm
 Requires: entrance
 Requires: extrackt
