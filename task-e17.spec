@@ -1,6 +1,6 @@
 Name:    task-e17
 Version: 2009.1
-Release: %mkrel 6
+Release: %mkrel 7
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -42,6 +42,7 @@ Requires: Eterm
 Requires: entrance
 Requires: extrackt
 Requires: enity
+Requires: e17_themes
 
 
 %description
