@@ -1,6 +1,6 @@
 Name:    task-e17
-Version: 2009.1
-Release: %mkrel 8
+Version: 2010.1
+Release: %mkrel 1
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -26,8 +26,6 @@ Requires: gtk-chtheme
 Requires: lftp
 Requires: mrxvt
 Requires: screen
-#Requires: xchat
-#Requires: pidgin
 
 Requires: emphasis
 Requires: expedite
@@ -37,13 +35,11 @@ Requires: elicit
 Requires: edje_viewer
 Requires: edje_editor
 Requires: estickies
-#Requires: enna # broken upstream
 Requires: Eterm
 Requires: entrance
 Requires: extrackt
 Requires: enity
 Requires: e17_themes
-
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
@@ -69,18 +65,10 @@ Requires: exalt
 Requires: elementary
 Requires: ecore
 Requires: edb
-Requires: eet
 Requires: embryo
 Requires: esmart
 Requires: e_dbus
 Requires: e_modules
-#Requires: epeg
-#Requires: ephoto
-#Requires: exhibit
-#Requires: engrave
-#Requires: empower
-#Requires: evfs
-#Requires: eclair
 
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
