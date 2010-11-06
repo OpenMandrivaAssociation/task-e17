@@ -59,7 +59,6 @@ Requires: emotion
 Requires: ethumb
 Requires: etk
 Requires: efreet
-Requires: ewl
 Requires: itask
 Requires: exalt
 Requires: elementary
