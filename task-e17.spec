@@ -1,5 +1,5 @@
 Name:    task-e17
-Version: 2010.1
+Version: 2011.0
 Release: %mkrel 1
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
@@ -56,7 +56,7 @@ Requires: eet
 Requires: edje
 Requires: imlib2
 Requires: emotion
-Requires: epsilon
+Requires: ethumb
 Requires: etk
 Requires: efreet
 Requires: ewl
