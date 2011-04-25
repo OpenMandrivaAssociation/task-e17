@@ -1,6 +1,6 @@
 Name:    task-e17
 Version: 2011.0
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: Metapackage for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
@@ -29,7 +29,7 @@ Requires: screen
 
 Requires: expedite
 Requires: edje_viewer
-Requires: Eterm
+Requires: eterm
 Requires: e17_themes
 
 %description
@@ -41,7 +41,7 @@ Summary: Metapackage minimal for the E17
 Group:   Graphical desktop/Enlightenment
 License: GPL
 Provides: E17
-Requires: Eterm
+Requires: eterm
 Requires: e
 Requires: eet
 Requires: edje
