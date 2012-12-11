@@ -1,80 +1,66 @@
-Name:    task-e17
-Version: 2011.0
-Release: %mkrel 4
-Summary: Metapackage for the E17
-Group:   Graphical desktop/Enlightenment
-License: GPL
-Epoch:	 1
-URL:	 http://wiki.mandriva.com/en/Development/Ideas/E17
-Source : %name.tar.bz2
-
-BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-root
-
+Name:		task-e17
+Version:	2012.1
+Release:	1
+Summary:	Metapackage for the E17
+Group:		Graphical desktop/Enlightenment
+License:	GPL
+URL:		http://www.rosalinux.com
+BuildArch:	noarch
+Requires:	%{name}-minimal
+Requires:	editje
+Requires:	edje_viewer
+Requires:	emprint
+Requires:	enki
+Requires:	enlil
+Requires:	exalt
+Requires:	eweather
+Requires:	e_modules
+Requires:	ephoto
+Requires:	enjoy
+Requires:	python-ecore
+Requires:	python-e_dbus
+Requires:	python-edje
+Requires:	python-egenix-mx-base
+Requires:	python-elementary
+Requires:	python-emotion
+Requires:	python-ethumb
+Requires:	python-evas
+# Some stuff we don't have yet
+Suggests:	eve
 # prefered apps
-Suggests: exaile
-Suggests: file-roller
-Suggests: gimp
-Suggests: thunar
-Suggests: midori
-Suggests: xterm
-Requires: %{name}-minimal
-Requires: aumix
-Requires: brasero
-Requires: evince
-Requires: gtk-chtheme
-Requires: lftp
-Requires: mrxvt
-Requires: screen
-
-Requires: expedite
-Requires: edje_viewer
-Requires: eterm
-Requires: e17_themes
+Suggests:	lxdm
 
 %description
 This package is a meta-package, meaning that its purpose is to contain
 all E17 application and librairies. It also install some suggests
 
 %package minimal
-Summary: Metapackage minimal for the E17
-Group:   Graphical desktop/Enlightenment
-License: GPL
-Provides: E17
-Requires: eterm
-Requires: e
-Requires: eet
-Requires: edje
-Requires: imlib2
-Requires: emotion
-Requires: ethumb
-Requires: efreet
-Requires: exalt
-Requires: elementary
-Requires: ecore
-Requires: embryo
-Requires: e_dbus
-Requires: e_modules
+Summary:	Metapackage minimal for the E17
+Group:		Graphical desktop/Enlightenment
+License:	GPL
+Provides:	E17
+Requires:	eet
+Requires:	evas
+Requires:	ecore
+Requires:	embryo
+Requires:	edje
+Requires:	efreet
+Requires:	e_dbus
+Requires:	eeze
+Requires:	expedite
+Requires:	evas_generic_loaders
+Requires:	emotion
+Requires:	ethumb
+Requires:	elementary
+Requires:	e
+Requires:	eterm
+Suggests:	xterm
 
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
 all E17 application and librairies.
 
-%prep
-%setup -q -n %name
-
-%install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p ${RPM_BUILD_ROOT}/%{_prefix}/share/%name/doc/
-cp README ${RPM_BUILD_ROOT}/%{_prefix}/share/%name/doc/
-
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
-%{_prefix}/share/%name/doc/README
 
 %files minimal
-%defattr(-,root,root)
-%{_prefix}/share/%name/doc/README
+
