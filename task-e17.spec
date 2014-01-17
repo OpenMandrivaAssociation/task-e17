@@ -1,5 +1,5 @@
 Name:		task-e17
-Version:	2012.1
+Version:	%distro_release
 Release:	1
 Summary:	Metapackage for the E17
 Group:		Graphical desktop/Enlightenment
