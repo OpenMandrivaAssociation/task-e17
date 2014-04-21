@@ -1,6 +1,6 @@
 Name:		task-e17
 Version:	%distro_release
-Release:	1
+Release:	2
 Summary:	Metapackage for the E17
 Group:		Graphical desktop/Enlightenment
 License:	GPL
@@ -53,8 +53,7 @@ Requires:	emotion
 Requires:	ethumb
 Requires:	elementary
 Requires:	e
-Requires:	eterm
-Suggests:	xterm
+Requires:	terminology
 
 %description minimal
 This package is a meta-package, meaning that its purpose is to contain
