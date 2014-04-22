@@ -17,14 +17,8 @@ Requires:	eweather
 Requires:	e_modules
 Requires:	ephoto
 Requires:	enjoy
-Requires:	python-ecore
-Requires:	python-e_dbus
-Requires:	python-edje
+Requires:	python-efl
 Requires:	python-egenix-mx-base
-Requires:	python-elementary
-Requires:	python-emotion
-Requires:	python-ethumb
-Requires:	python-evas
 # Some stuff we don't have yet
 Suggests:	eve
 # prefered apps
@@ -45,7 +39,7 @@ Requires:	ecore
 Requires:	embryo
 Requires:	edje
 Requires:	efreet
-Requires:	e_dbus
+Requires:	eldbus
 Requires:	eeze
 Requires:	expedite
 Requires:	evas_generic_loaders
