@@ -1,6 +1,6 @@
 Name:		task-e17
 Version:	%distro_release
-Release:	2
+Release:	3
 Summary:	Metapackage for the E17
 Group:		Graphical desktop/Enlightenment
 License:	GPL
