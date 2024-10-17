@@ -4,7 +4,7 @@ Release:	2
 Summary:	Metapackage for the E17
 Group:		Graphical desktop/Enlightenment
 License:	GPL
-URL:		http://www.rosalinux.com
+URL:		https://www.rosalinux.com
 BuildArch:	noarch
 Requires:	%{name}-minimal
 Requires:	editje
